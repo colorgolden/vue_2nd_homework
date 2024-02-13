@@ -11,24 +11,12 @@
 </head>
 
 <body>
-    <!-- <script type="module">
-        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
-
-        createApp({
-            data() {
-                return {
-                    temp: {},
-                    products: [], 
-                }
-            }
-        }).mount('#app')
-    </script> -->
 
     <div id="app">
         <nav>
             <div class="header_conteiner">
                 <a href="/" class="">
-                    <img src="" alt="logo" width="280" height="280" loading="lazy">
+                    <img src="https://images-workbench.99static.com/fMyDyTQSYHgM5iNK7ry-hpds45M=/363x120:1706x1463/fit-in/500x500/filters:fill(white,true):format(webp)/99designs-contests-attachments/124/124289/attachment_124289625" alt="logo" width="280" height="280" loading="lazy">
                 </a>
             </div>
             <div class="header_menu">
@@ -71,7 +59,6 @@
                     <img class="card-img-top" :src="item.imageUrl" alt="Card image cap">
                     <div class="card-body">
                         <h3>{{ item.title }}</h3>
-                        <!-- <p class="card-text">{{ item.description }}</p> -->
                         <span v-if="item.is_enabled===1" class="text-success card-text">已啟用</span>
                         <span v-else class="card-text">未啟用</span>
                         <span class="card-text text-secondary"><del>原價：{{ item.origin_price }}</del></span>

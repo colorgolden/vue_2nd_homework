@@ -8,9 +8,6 @@ const path = 'colorgolden'; // 請加入個人 API Path
 
 // #1 如何串接 API 資料
 
-// const emailInput = document.querySelector('#email');
-// const pwInput = document.querySelector('#password');
-
 
 const app = createApp({
   data() {
@@ -76,7 +73,6 @@ const app = createApp({
           console.log(res.data.products);
           // 將res.data.products設定到Vue的products陣列中
           this.products = res.data.products;
-          //console.log(app.products);
         })
         .catch((error) => {
           console.dir(error);
@@ -90,30 +86,5 @@ const app = createApp({
   }
 }).mount('#app')
 
-
-
-
-//checkBtn.addEventListener('click', checkLogin);
-// function checkLogin() {
-//   // #3 取得 Token（Token 僅需要設定一次）
-//   const token = document.cookie.replace(/(?:(?:^|.*;\s*)newToken\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-//   axios.defaults.headers.common['Authorization'] = token;
-
-//   if (!window.location.href.includes('admin_login.html')) {  //只要不是在admin_login頁面，就執行大括號內的程式碼
-//     // #4  確認是否登入
-//     axios.post(`${url}/v2/api/user/check`, {}, { headers: { 'Authorization': token } })
-//       .then((res) => {
-//         console.log(res);
-//       })
-//       .catch((error) => {
-//         alert("尚未登入會員，請重新登入！");
-//         window.location.href = 'admin_login.html'; //跳轉到login頁面
-//         console.dir(error);
-//         return;
-//       })
-//   } else {
-//     return;
-//   }
-// }
 
 
